@@ -1,0 +1,20 @@
+# virtual environments
+venv/
+env/
+
+# python cache
+__pycache__/
+*.pyc
+
+# environment variables
+.env
+
+# flask
+instance/
+
+# migrations
+migrations/versions/
+
+# OS junk
+.DS_Store
+Thumbs.db
