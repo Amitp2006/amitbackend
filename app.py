@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-
 app = Flask(__name__)
 CORS(
     app,
@@ -36,6 +35,7 @@ class Expense(db.Model):
     title = db.Column(db.String(100))
     amount = db.Column(db.Float)
     user_id = db.Column(db.Integer)
+
 # ---------- ROUTES ----------
 @app.route("/register", methods=["POST"])
 def register():
